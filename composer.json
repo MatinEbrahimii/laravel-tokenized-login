@@ -1,0 +1,45 @@
+{
+  "name": "matinebrahimii/laravel-tokenize-login",
+  "description": "",
+  "keywords": [
+    "laravel",
+    "laravel5-package",
+    "PHP",
+    "laravel5"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/MatinEbrahimii/tokenized-login",
+  "authors": [
+    {
+      "name": "Matin Ebrahimi",
+      "email": "matin.ebrahihi@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3|7.2.*|7.3.*|7.4.*",
+    "laravel/framework": "~5.1|6.*|7.*",
+    "imanghafoori/laravel-nullable": "^1.2",
+    "imanghafoori/laravel-smart-facades": "^1.0"
+  },
+  "autoload-dev": {
+      "psr-4": {
+        "MatinEbrahimi\\TokenizedLogin\\" : "tests"
+      }
+  },
+  "require-dev": {
+    "orchestra/testbench": "~3.0",
+    "mockery/mockery": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "MatinEbrahimi\\TokenizedLogin\\" : "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MatinEbrahimi\\TokenizedLogin\\TwoFactorAuthServiceProvider"
+      ]
+    }
+  }
+}
